@@ -27,6 +27,9 @@
   }
 
  .imgofcomposers {
-    width: 30px;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+    margin: 100px;
  }
