@@ -10,7 +10,7 @@
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: ;
+    text-decoration: wavy ;
     font-size: 17px;
   }
   
@@ -34,7 +34,7 @@
     margin: 100px;
  }
 
- backgroundimage {
+ .backgroundimage {
   background-image: url("background\ design\ for\ classical\ music.jpg");
   background-size: cover;
   background-position: center;
