@@ -3,6 +3,11 @@
     background-color: #333;
     overflow: hidden;
   }
+
+  .title {
+    font-family: cursive;
+    font-size: 60px;
+  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -28,10 +33,19 @@
 
  .imgofcomposers {
     display: flex;
+    float:left;
     flex-wrap: wrap;
     width: 200px;
     height: 300px;
     margin: 100px;
+ }
+ .body{
+  background-image: url("background\ design\ for\ classical\ music.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+ 
  }
 
  .backgroundimage {
