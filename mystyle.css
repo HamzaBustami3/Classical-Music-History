@@ -56,3 +56,27 @@
   height: 100%;
   width: 100%;
      }
+
+.nav2 {
+  font-family: cursive;
+}
+
+.citations {
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0.7;
+  font-size: small;
+  font-weight: bold;
+}
+.summaryimage {
+  float: left;
+  margin-right: 10px;
+}
+.summaries {
+  font-family:cursive;
+  margin-left:20px;
+
+}
+.i {
+  font-family: cursive;
+}
