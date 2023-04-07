@@ -238,16 +238,16 @@ body.active .wrapper .section{
 }
 .paragraphmain {
   float: right;
-  margin-left: 400px;
+ 
   box-shadow:#333;
-  border: #333;
-  width: 700px;
+  z-index: 1;
+  width: 500px;
   height: fit-content;
   text-decoration: wavy;
   font-family: cursive;
   font-style: italic;
   font-weight: 800;
-  overflow: auto;
+ 
 }
 
 .fancyheading {
@@ -263,4 +263,22 @@ body.active .wrapper .section{
  float:left
   
 
+}
+
+.seccomposerimg {
+  float:right;
+  
+}
+
+.secparagraphmain {
+  float: left;
+ 
+  box-shadow:#333;
+
+  width: 500px;
+  height: fit-content;
+  text-decoration: wavy;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 800;
 }
