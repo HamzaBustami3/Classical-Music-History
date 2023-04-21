@@ -85,6 +85,7 @@
 
 
 *{
+  
 	list-style: none;
 	text-decoration: none;
 	margin: 0;
@@ -95,18 +96,18 @@
 
 
 .wrapper .sidebar{
-	background-color: #333;
+  background-color: #333;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 225px;
 	height: 100%;
-	padding: 20px 0;
+	padding: 10px 0;
 	transition: all 0.5s ease;
 }
 
 .wrapper .sidebar .profile{
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	text-align: center;
 }
 
@@ -125,12 +126,12 @@
 
 .wrapper .sidebar .profile p{
 	color: rgb(206, 240, 253);
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .wrapper .sidebar ul li a{
 	display: block;
-	padding: 13px 10px;
+	padding: 7px 7px;
 	border-bottom: 1px solid grey;
 	color: rgb(241, 237, 237);
 	font-size: 16px;
@@ -140,6 +141,7 @@
 .wrapper .sidebar ul li a .icon{
 	color: #dee4ec;
 	width: 30px;
+  height: 30px;
 	display: inline-block;
 }
 
@@ -238,16 +240,18 @@ body.active .wrapper .section{
 }
 .paragraphmain {
   float: right;
- 
+  padding: 10px;
+  margin: 10px;
   box-shadow:#333;
   z-index: 1;
   width: 500px;
-  height: fit-content;
+  height: auto;
+  font-size: 14px;
   text-decoration: wavy;
   font-family: cursive;
   font-style: italic;
   font-weight: 800;
- 
+ overflow-x: auto;
 }
 
 .fancyheading {
@@ -260,13 +264,16 @@ body.active .wrapper .section{
   background-color: rgb(232, 221, 212);
 }
 .lowercontainer {
- float:left
+ float:left;
+ 
   
 
 }
 
 .seccomposerimg {
   float:right;
+  width:400px;
+  height: auto;
   
 }
 
@@ -275,10 +282,50 @@ body.active .wrapper .section{
  
   box-shadow:#333;
 
-  width: 500px;
+  width: 400px;
   height: fit-content;
   text-decoration: wavy;
   font-family: cursive;
   font-style: italic;
   font-weight: 800;
 }
+
+.composerpageinnit {
+  margin-left:100px;
+}
+
+body {
+    overflow-x: hidden;
+  
+}
+.samplez {
+  font-family: cursive;
+  text-decoration: wavy;
+  float:left;
+  margin-top: 100;
+  margin-bottom: 100;
+
+
+
+}
+<!--ChatGPT-->
+.endingparagraph {
+  font-family: "Georgia", serif; /* Elegant serif font */
+  font-size: 18px; /* Appropriate font size for readability */
+  color: #333; /* Dark color for a somber mood */
+  line-height: 1.4; /* Adequate line height for readability */
+  letter-spacing: 0.05em; /* Slightly increased letter spacing for elegance */
+  text-align: center; /* Centered text for a balanced appearance */
+  text-decoration: none; /* No text decoration for simplicity */
+  font-style: italic; /* Italicized text for a touch of melancholy */
+  opacity: 0.8; /* Slightly reduced opacity for a faded look */
+}
+
+.listz {
+  font-family: cursive;
+  text-decoration: wavy;
+  font-size: 18px;
+  opacity:0.7;
+}
+
+
