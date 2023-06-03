@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--FineGap-Youtube-->
-      <link rel="shortcut icon" type="x-icon" href="icon.jpg">
-      <link rel="stylesheet" href="Quizzes.css">
-      <link rel="stylesheet" href="baroquegame.css">
-      <!--FontAwesome.com-->
-      <script src="https://kit.fontawesome.com/10359bcb05.js" crossorigin="anonymous"></script>
-     <!--Design by foolishdeveloper.com-->
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="Quizzes.css">
+    <link rel="stylesheet" href="baroquegame.css">
+        <!--FontAwesome.com-->
+        <script src="https://kit.fontawesome.com/10359bcb05.js" crossorigin="anonymous"></script>
        <!--w3schools-->
        <div class="topnav">
         <a href="index.html">Home</a>
@@ -54,21 +51,21 @@
 
 
       </style>
-
-
-     
-
-    <title>Baroeque Era Quiz Home</title>
-<!--brian design quiz app outline-->
-    <body>
-      <div class="container">
-        <div id="Home" class="flex-column">
-          <h1>Are You Ready?</h1>
-          <div class="btn-container">
-            <a href="baroquegame.html" class="btn">Play</a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
-          </div>
+      
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="/game.html" class="btn">Play Again</a>
+            <a href="/" class="btn">Go Home<i class="fas fa-home"></i></a>
         </div>
-      </div>
-    </body>
-    </html>
+    </div>
+    <script src="baroqueend.js"></script>
+</body>
+</html>

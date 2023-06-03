@@ -3,62 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Baroque Era Quiz</title>
-      <!--FineGap-Youtube-->
-      <link rel="shortcut icon" type="x-icon" href="icon.jpg">
-      <link rel="stylesheet" href="Quizzes.css">
-      <link rel="stylesheet" href="baroquegame.css">
-      <!--FontAwesome.com-->
-      <script src="https://kit.fontawesome.com/10359bcb05.js" crossorigin="anonymous"></script>
-    
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="Quizzes.css">
+    <link rel="stylesheet" href="baroquegame.css">
+       <!--FontAwesome.com-->
+       <script src="https://kit.fontawesome.com/10359bcb05.js" crossorigin="anonymous"></script>
+
+       <!--w3schools-->
+       <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Composersindex.html">Composers Index</a>
+        <a href="Community.html">Community</a>
+        <a class="active" href="Quizzes.html">Quiz Yourself!</a>
+        <a href="About.html">About</a>
+      </div>
+
+      <style>
+       
+       .topnav {
+ 
+ background-color: #333;
+ overflow: hidden;
+ top: 0;
+ width: 1292px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+ float: left;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+ background-color: #04AA6D;
+ color: white;
+}
 
 
-
-
-    <body>
-        <div class="container">
-                <div id="game" class="justify-center flex-column"></div>
-                    <div id="hud">
-                        <div class="hud-item">
-                            <p id="progressText" class="hud-prefix">
-                                Question
-                            </p>
-                            <div id="progressBar">
-                                <div id="progressBarFull">
-
-                                </div>
-                            </div>
-                            <div class="hud-item">
-                                <p class="hud-prefix">
-                                    Score
-                                </p>
-                                <h1 class="hud-main text" id="score">
-                                    0
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="question">
-                        What is the answer to this question
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">A</p>
-                        <p class="choice-text" data-number="1">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">B</p>
-                        <p class="choice-text" data-number="2">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">C</p>
-                        <p class="choice-text" data-number="3">Choice</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">D</p>
-                        <p class="choice-text" data-number="4S">Choice</p>
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
                     </div>
                 </div>
-         </div>
-         <script src="game.js"></script>
-    </body>
-    </html>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question">What is the answer to this question</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
