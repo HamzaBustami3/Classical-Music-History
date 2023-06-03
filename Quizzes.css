@@ -1,44 +1,12 @@
-.quizhome {
-    background-image: url(classical\ moosic\ background\ 21.jpg);
-    
-}
-.quiz-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
-    padding: 2rem 0;
-    width: 130rem;
-    
-    height: fit-content;
-    text-align: center;
-    margin-bottom: 1rem;
-    text-decoration: none;
-   
-    border-radius: 4px;  
-}
-.baroqueera {
-    background-image: url(baroque_composers.jpg);
-    background-size: cover;
-  }
-  
-  .classicalera {
-    background-image: url(classical_era_composers.png);
-    background-size: cover;
-  }
-  
-  .romanticera {
-    background-image: url(romantic_era_composers.jpeg);
-    background-size: cover;
-  }
-
-
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 :root {
     background-color: rgb(29, 26, 26)
     
 }
+
+
+
 
 * {
     box-sizing: border-box;
@@ -94,7 +62,7 @@ h2 {
 .hidden {
     display: none;
 }
-<!--cssgradient.io-->
+<!--cssgradient-->
 .btn {
     font-size: 2.4rem;
     padding: 2rem 0;
@@ -106,7 +74,7 @@ h2 {
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
     border-radius: 4px;
 }
-<!--cssgradient.io-->
+<!--cssgradient-->
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
@@ -176,3 +144,35 @@ input::placeholder {
     font-size: 2rem;
     color: rgb(28, 26, 26)
 }
+
+
+.quizhome {
+    background-image: url(classical\ moosic\ background\ 21.jpg);
+    
+}
+.quiz-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    padding: 2rem 0;
+    width: 130rem;
+    
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+   
+    border-radius: 4px;  
+}
+.quizhome .quiz-button .baroqueera {
+    background-image: url(baroque\ composers.jpg);
+  }
+  
+  .quizhome .quiz-button .classicalera {
+    background-image: url(classical\ era\ composes.png);
+  }
+  
+  .quizhome .quiz-button .romanticera {
+    background-image: url(romantic\ era\ composers.jpeg);
+  }
