@@ -1,6 +1,6 @@
 body {
-    color: #fff;
-    background-image: url(baroque\ composers.jpeg);
+
+    background-image: url(baroque\ composers.jpg);
 }
 
 .choice-container {
@@ -46,7 +46,8 @@ body {
 
 .hud-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3.0rem;
+    color: azure;
 }
 
 .hud-main-text {
@@ -73,3 +74,8 @@ body {
         min-width: 40rem;
     }
 }
+
+.nonvisible {
+    opacity: 0;
+}
+

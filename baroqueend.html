@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
-    <link rel="stylesheet" href="baroquegame.css">
-    <link rel="stylesheet" href="Quizzes.css">
-   
-        <!--FontAwesome.com-->
-        <script src="https://kit.fontawesome.com/10359bcb05.js" crossorigin="anonymous"></script>
-       <!--w3schools-->
-       <div class="topnav">
+    <!--w3schools-->
+    <div class="topnav">
         <a href="index.html">Home</a>
         <a href="Composersindex.html">Composers Index</a>
         <a href="Community.html">Community</a>
@@ -52,19 +44,22 @@
 
 
       </style>
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baroque Era Quiz</title>
+    <link rel="stylesheet" href="Quizzes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
-<body>
+<body class="yay">
+    <img class="leftbar" href="bach flip.gif">
+    <img class="rightbar" href="YAY.jpeg">
     <div class="container">
         <div id="end" class="flex-center flex-column">
+            <h1>Final Score:</h1>
             <h1 id="finalScore">0</h1>
-            <form class="end-form-container">
-                <h2 id="end-text">Enter your name below to save your score!</h2>
-                <input type="text" name="name" id="username" placeholder="Enter your name">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
-            </form>
-            <a href="/game.html" class="btn">Play Again</a>
-            <a href="/" class="btn">Go Home<i class="fas fa-home"></i></a>
+            <h1>Great job!</h1>
+            <a href="baroquegame.html" class="btn">Play Again</a>
+            <a href="Quizzes.html" class="btn">Go Home<i class="fas fa-home"></i></a>
         </div>
     </div>
     <script src="baroqueend.js"></script>

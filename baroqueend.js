@@ -1,36 +1,53 @@
-const username = document.querySelector('#username')
-const saveScoreBtn = document.querySelector('#saveScoreBtn')
-const finalScore = document.querySelector('#finalScore')
-const mostREcentScore = document.querySelector('#mostRecentScore')
+// Select the username element
+const username = document.querySelector('#username');
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+// Select the save score button element
+const saveScoreBtn = document.querySelector('#saveScoreBtn');
 
-const MAX_HIGH_SCORES = 5
+// Select the final score element
+const finalScore = document.querySelector('#finalScore');
 
-finalScore.innterText = mostREcentScore
+// Get the most recent score from local storage
+const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+// Retrieve high scores from local storage or initialize an empty array
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+// Set the maximum number of high scores
+var MAX_HIGH_SCORES = 2200;
+
+// Display the most recent score
+finalScore.innerText = mostRecentScore;
+
+// Disable save score button until username is entered
 username.addEventListener('keyup', () => {
-    saveScoreBtn.Disabled = !username.value
-})
+  saveScoreBtn.disabled = !username.value;
+});
 
-savehighScore = e => {
-    e.preventDefault()
+// Function to save the high score
+saveHighScore = (e) => {
+  e.preventDefault();
 
-
-const score = {
+  // Create a new score object with the most recent score and username
+  const score = {
     score: mostRecentScore,
     name: username.value
-}
+  };
 
-highScores.push(score)
+  // Add the new score to the high scores array
+  highScores.push(score);
 
-highScores.sort((a,b)=> {
-    return b.score - a.score
-})
+  // Sort the high scores array in descending order based on score
+  highScores.sort((a, b) => {
+    return b.score - a.score;
+  });
 
-highScores.splice(5)
+  // Keep only the top 5 high scores
+  highScores.splice(5);
 
-localStorage.setItem('highScores', JSON.stringify(highScores))
-window.location.assign('/')
+  // Store the updated high scores array in local storage
+  localStorage.setItem('highScores', JSON.stringify(highScores));
 
+  // Redirect to the quizzes page
+  window.location.assign('quizzes.html');
 }
