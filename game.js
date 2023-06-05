@@ -1,3 +1,5 @@
+
+//brian design quiz app outline 
 // Select the question element
 const question = document.querySelector('#question');
 
@@ -33,7 +35,7 @@ function playNextTrack() {
 // Initialize variables for the current question, answer acceptance, score, question counter, and available questions
 let currentQuestion = {};
 let acceptingAnswers = true;
-let score = 0;
+let score = 0; 
 let questionCounter = 0;
 let availableQuestions = [];
 

@@ -61,11 +61,12 @@
     text-align: center;
     margin-bottom: 2rem;
     text-decoration: none;
-    background: rgb(50,50,51);
-    background: linear-gradient(90deg, rgba(50,50,51,0.6222864145658263) 0%, rgba(220,235,27,1) 100%);
+    background: rgb(0, 0, 0);
+background: linear-gradient(90deg, rgba(47,247,44,1) 0%, rgba(0,212,255,1) 100%);
     
     border-radius: 4px;
   }
+  
 
   .btn:hover {
     cursor: pointer;
@@ -145,13 +146,18 @@
     font-size: 2rem;
     color: rgb(28, 26, 26);
   }
-  #start (
-    font-size: 1.3rem
-  )
-
+  #start {
+    font-size: 6rem;
+    width:10rem;
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px; 
+    place-content: center;
+  }
+ 
 .quizhome {
-    background-image: url(classical\ moosic\ background\ 21.jpg);
-    
+    background-image: url(classical\ moosic\ background\ 21.jpg)  
 }
 .quiz-button {
     display: flex;
@@ -184,14 +190,23 @@
   .introductionparagraph {
     font-size: large;
   }
-  .yay {
-    background-image: url(realistic-confetti-background_23-2148971469.avif);
+  body.yay {
+    background-image: url(confettyy.jpg);
   }
+  
   .leftbar {
-    float:left;
-    margin-left: 10px;
+    top:300px;
+    left:10px;
+    margin-left: 50px;
+    width: 400px;
+    height: auto;
+    position:absolute;
   }
   .rightbar {
-    float: right;
-    margin-right: 10px
-  }
+    margin-right: 100px;
+    top: 300px;
+    right:10px;
+    height: auto;
+    width: 250px;
+    position: absolute;
+    }
