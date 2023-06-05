@@ -15,7 +15,7 @@ const progressBarFull = document.querySelector('#progressBarFull');
 
 // play music while the quiz commences
 const audio = document.getElementById("myAudio");
-const playlist = ["Bach-CelloSuite.mp3", "Bach-Goldberg.mp3", "ScarlattiSonataE.mp3"];
+const playlist = ["Mozart-Sonatak333.mp3", "Beethoven-Pathétique.mp3", "Beethoven-Symphony7.mp3"];
 let currentTrackIndex = 0;
 
 audio.addEventListener("ended", playNextTrack);
@@ -30,7 +30,6 @@ function playNextTrack() {
 }
 
 playNextTrack();
-
 
 
 
