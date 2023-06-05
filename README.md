@@ -10,23 +10,15 @@ const playlist = ["Chopin-Ballade4.mp3", "Liszt-BendictionDeDieuDansLaSolitude.m
 The currentTrackIndex variable keeps track of the index of the currently playing track in the playlist array. It is initialized to 0, indicating the first track in the playlist.
 let currentTrackIndex = 0;
 The playNextTrack() function is defined and bound to the "ended" event of the audio element using the addEventListener method. This function is responsible for playing the next track in the playlist when the current track ends.
-javascript
-Copy code
 audio.addEventListener("ended", playNextTrack);
 Inside the playNextTrack() function, the currentTrackIndex is incremented to move to the next track. If the index exceeds the length of the playlist, it is reset to 0 to loop back to the first track.
-javascript
-Copy code
 currentTrackIndex++;
 if (currentTrackIndex >= playlist.length) {
   currentTrackIndex = 0; // Loop back to the first track
 }
 The src property of the audio element is updated with the path of the next track using the currentTrackIndex as the index in the playlist array.
-javascript
-Copy code
 audio.src = playlist[currentTrackIndex];
 Finally, the audio.play() method is called to start playing the updated track.
-javascript
-Copy code
 audio.play();
 By calling the playNextTrack() function initially, the code starts playing the first track in the playlist. Subsequently, each track will automatically transition to the next one when the previous track ends.
 To use this code, you need to ensure that you have an HTML audio element with the ID "myAudio" and update the playlist array with the names or paths of the audio files you want to play. You can also customize the behavior or appearance of the audio player by adding additional functionality or applying CSS styles to the HTML elements.
