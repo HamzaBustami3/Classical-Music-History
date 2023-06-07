@@ -16,7 +16,7 @@ const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
 const audio = document.getElementById("myAudio");
-const playlist = ["music1.mp3", "music2.mp3", "music3.mp3"];
+const playlist = ["Bach-Goldberg.mp3", "ScarlarriSonataE.mp3", "Bach-CelloSuikte.mp3"];
 let currentTrackIndex = 0;
 
 audio.addEventListener("ended", playNextTrack);
